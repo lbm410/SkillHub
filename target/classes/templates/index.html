@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/index.css}">
+    <title>SkillHub</title>
+</head>
+<body>
+<div class="dashboard-container">
+    <!-- Menú lateral -->
+    <aside class="sidebar">
+        <div class="logo">
+            <img th:src="@{/images/logo-cropped.svg}" alt="SkillHub Logo" class="logo-img">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="/dashboard"><img th:src="@{/images/dashboard.svg}" class="icon"> Dashboard</a></li>
+                <li><a href="/courses"><img th:src="@{/images/courses.svg}" class="icon"> Cursos</a></li>
+                <li><a href="/messages"><img th:src="@{/images/messages.svg}" class="icon"> Mensajes</a></li>
+                <li><a href="/students"><img th:src="@{/images/users.svg}" class="icon"> Estudiantes</a></li>
+                <li><a href="/teachers"><img th:src="@{/images/teachers.svg}" class="icon"> Profesores</a></li>
+                <li><a href="/reports"><img th:src="@{/images/reports.svg}" class="icon"> Reportes</a></li>
+                <li><a href="/settings"><img th:src="@{/images/settings.svg}" class="icon"> Configuración</a></li>
+            </ul>
+        </nav>
+        <div class="logout">
+            <a href="/logout"><img th:src="@{/images/logout.svg}" class="icon"> Cerrar sesión</a>
+        </div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <header class="header">
+            <h1>Dashboard</h1>
+        </header>
+        <section class="content">
+            <div class="dashboard-widgets">
+                <!-- Puedes añadir widgets aquí para mostrar datos como progreso, mensajes, notificaciones -->
+                <div class="widget">Progreso del Curso</div>
+                <div class="widget">Últimos Mensajes</div>
+                <div class="widget">Cursos Inscritos</div>
+                <div class="widget">Estadísticas</div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
